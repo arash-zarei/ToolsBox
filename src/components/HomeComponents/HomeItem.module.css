@@ -1,0 +1,26 @@
+.item{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #2e2d2d;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.item img{
+    width: 150px;
+}
+
+.item p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}

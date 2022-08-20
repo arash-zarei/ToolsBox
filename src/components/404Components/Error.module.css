@@ -1,0 +1,203 @@
+.error404{
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0 70px 0;
+}
+
+.error404 .ErrorText{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px #492f6b dashed;
+    animation: rotate 5s infinite ease-in-out;
+    -webkit-animation: rotate 5s infinite ease-in-out;
+    animation-direction: alternate;
+    position: relative;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+
+
+.ErrorText::before{
+    content: '';
+    width: 15%;
+    height: 15%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    animation: before  infinite 5s ease-in-out;
+    -webkit-animation: before  infinite 5s ease-in-out;
+    animation-direction: alternate;
+}
+
+
+@keyframes before {
+    0%{
+        top: 0;
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        right: 50%;
+}
+    50%{
+        top: 50%;
+        transform: rotate(125de);
+        -webkit-transform: rotate(125de);
+        -moz-transform: rotate(125de);
+        -ms-transform: rotate(125de);
+        -o-transform: rotate(125de);
+        right: 100%;
+}
+    100%{
+        top: 0%;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        right: 0%;
+}
+}
+
+
+.ErrorText::after{
+    content: '';
+    width: 15%;
+    height: 15%;
+    background-color: #e5ff00;
+    position: absolute;
+    bottom: 0;
+    animation: after  infinite 5s ease-in-out;
+    -webkit-animation: after  infinite 5s ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes after {
+    0%{
+        bottom: 0;
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        left: 50%;
+}
+    50%{
+        bottom: 50%;
+        transform: rotate(125de);
+        -webkit-transform: rotate(125de);
+        -moz-transform: rotate(125de);
+        -ms-transform: rotate(125de);
+        -o-transform: rotate(125de);
+        left: 100%;
+}
+    100%{
+        bottom: 0%;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        left: 0%;
+}
+}
+
+
+.error404 .ErrorText p{
+    font-size: 150px;
+    font-weight: bold;
+    animation: rotatetext 10s infinite ease-in-out;
+    -webkit-animation: rotatetext 10s infinite ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes rotatetext {
+    100%{
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}
+    0%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+
+.error404 .ErrorText p span:nth-child(1){
+    color: red;
+    animation: spanRotate alternate 10s infinite ease-in-out;
+    -webkit-animation: spanRotate alternate 10s infinite ease-in-out;
+    animation-direction: alternate;
+}
+.error404 .ErrorText p span:nth-child(2){
+    color: blue;
+    animation: spanRotate alternate 15s infinite ease-in-out;
+    -webkit-animation: spanRotate alternate 15s infinite ease-in-out;
+    animation-direction: alternate;
+}
+.error404 .ErrorText p span:nth-child(3){
+    color: yellow;
+    animation: spanRotate alternate 5s infinite ease-in-out;
+    -webkit-animation: spanRotate alternate 5s infinite ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes spanRotate {
+    0%{
+        color: red;
+    }
+    50%{
+        color: blue;
+    }
+    100%{
+        color: yellow;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .error404 .ErrorText{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .error404 .ErrorText{
+        width: 300px;
+        height: 300px;
+    }
+}

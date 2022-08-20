@@ -1,0 +1,144 @@
+.coin {
+  width: 90%;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #0b0b57;
+  position: relative;
+  overflow-x: auto;
+  margin: 5px auto;
+  border: 1px solid #a4a0a0;
+  color: #fff;
+  direction: ltr;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.coin div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coin div:nth-child(1) {
+  border-bottom: 1px solid silver;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.coin div:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#openChart {
+  height: fit-content;
+}
+
+.coin:hover {
+  background-color: #242440;
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  cursor: pointer;
+}
+
+.coin button {
+  padding: 3px 7px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #3cff00;
+  color: #242440;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.coin img {
+  width: 30px;
+}
+
+.name {
+  width: 140px;
+  font-size: 14px;
+  margin-left: 15px;
+  text-align: left;
+  font-weight: bold;
+  color: #f9f9f9f9;
+}
+
+.symbol,
+.price {
+  width: 100px;
+  text-align: left;
+}
+
+.greenPriceChange,
+.redPriceChange {
+  width: 100px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.greenPriceChange {
+  color: #3cff00;
+}
+
+.redPriceChange {
+  color: #ff0000;
+}
+
+@media only screen and (max-width: 768px) {
+  /* .coin{
+        flex-direction: column;
+        gap: 15px;
+    } */
+
+  /* .coin div{
+        flex-direction: column;
+        gap: 15px;
+    } */
+
+  .greenPriceChange,
+  .redPriceChange,
+  .name,
+  .symbol,
+  .price {
+    width: fit-content;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 576px){
+    .coin div:nth-child(1),
+    .coin div:nth-child(2){
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+  .coin {
+    width: 100%;
+  }
+}

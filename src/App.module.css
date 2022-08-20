@@ -1,0 +1,31 @@
+.navBarMenu {
+  width: 20%;
+  background-color: #1F1D2B;
+}
+
+.headerContent {
+  width: 85%;
+  padding-top: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+  .headerContent{
+    margin: 0 auto;
+  }
+  .navBarMenu {
+    width: 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .navBarMenu {
+    position: absolute;
+    width: 100%;
+    background-color: #1f1d1d;
+    display: block;
+}
+
+  #closeMenu{
+    right: -100%;
+    display: none;
+  }
+}

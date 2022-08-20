@@ -1,0 +1,67 @@
+.toolsEdit{
+    position: absolute;
+    width: 35%;
+    height: 400px;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    padding-bottom: 50px;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+#openTool{
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.range{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.range input{
+    width: 80%;
+}
+
+.range label{
+    color: #fff;
+}
+
+.status{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 14px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #ffc400;
+}
+
+@media only screen and (max-width: 768px){
+    .toolsEdit{
+        right: -35%;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .toolsEdit{
+        width: 45%;
+        right: -45%;
+    }
+}

@@ -1,0 +1,13 @@
+.bgCovid{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.image {
+    width: 50%;
+    margin: 0 auto;
+    opacity: .05;
+}

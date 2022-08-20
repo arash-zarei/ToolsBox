@@ -1,0 +1,63 @@
+.content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input input{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: none;
+    border: 1px solid silver;
+}
+
+.buttons{
+    width: fit-content;
+    padding-right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn{
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 6px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.add{
+    background-color: #adff2f;
+}
+
+.cancel{
+    background-color: #f54;
+}
+
+.update{
+    background-color: #ffcd44;
+}
+
+@media only screen and (max-width: 768px) {
+    .content{
+        width: 90%;
+    }
+}

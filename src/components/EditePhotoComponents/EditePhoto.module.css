@@ -1,0 +1,100 @@
+.edite{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0 70px 0;
+    position: relative;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar .uploadImage input{
+    display: none;
+}
+
+.navbar .uploadImage label{
+    cursor: pointer;
+}
+
+.navbar .uploadImage label img{
+    width: 30px;
+}
+
+.navbar button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.navbar button img{
+    width: 30px;
+}
+
+.output{
+    margin-top: 20px;
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+}
+
+.output .imageOutPut{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    padding-bottom: 100px;
+}
+
+.output .imageOutPut img{
+    width: 400px;
+}
+
+#openTool{
+    width: 65%;
+}
+
+#openToolBar{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    .output .imageOutPut{
+        width: 100%;
+    }
+
+    .output .imageOutPut img{
+        width: 90%;
+    }
+
+    #openToolBar{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .output{
+        width: 100%;
+    }
+
+    .output .imageOutPut img{
+        width: 75%;
+    }
+}

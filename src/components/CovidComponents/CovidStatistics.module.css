@@ -1,0 +1,76 @@
+.statistics{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.statistics img{
+    width: 25%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.status{
+    width: 90%;
+    margin: 15px;
+    padding: 10px;
+}
+
+.new ,
+.total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.new p,
+.total p{
+    color: #fff;
+}
+
+.new:hover,
+.total:hover{
+    background-color: #444446;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.date{
+    background: #444446;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@media only screen and (max-width : 576px){
+    .statistics{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width : 400px){
+    .statistics{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width : 320px){
+    .statistics{
+        width: 90%;
+    }
+}
